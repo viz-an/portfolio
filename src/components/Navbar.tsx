@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const Navbar: React.FC = () => {
@@ -54,10 +55,11 @@ const Navbar: React.FC = () => {
           <a href="#contact" className="link-underline text-sm font-medium">
             Contact
           </a>
+          <ThemeToggle />
         </div>
 
         {/* Mobile menu button */}
-        <button
+        {/* <button
           className="md:hidden flex flex-col space-y-1.5 p-2"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
@@ -77,7 +79,31 @@ const Navbar: React.FC = () => {
               isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           ></span>
-        </button>
+        </button> */}
+        <div className="md:hidden flex items-center space-x-4">
+          <ThemeToggle />
+          <button
+            className="flex flex-col space-y-1.5 p-2"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+          >
+            <span
+              className={`block w-6 h-0.5 bg-foreground transition-transform duration-300 ease-out ${
+                isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+            ></span>
+            <span
+              className={`block w-6 h-0.5 bg-foreground transition-opacity duration-300 ease-out ${
+                isMobileMenuOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`block w-6 h-0.5 bg-foreground transition-transform duration-300 ease-out ${
+                isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            ></span>
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
