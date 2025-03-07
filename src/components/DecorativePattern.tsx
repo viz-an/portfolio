@@ -157,9 +157,12 @@ const DecorativePattern: React.FC = () => {
         className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${isHovering ? 'opacity-100' : 'opacity-0'}`}
         style={{ zIndex: 5 }}
       >
-        <div className="bg-background/80 backdrop-blur-sm px-4 py-2 rounded-md text-sm font-medium">
+        <a
+            href="https://github.com/an-viz"
+            target="_blank" rel="noopener noreferrer"
+            className="bg-background/80 backdrop-blur-sm px-4 py-2 rounded-md text-sm font-medium">
           Explore my work
-        </div>
+        </a>
       </div>
     </div>
   );
