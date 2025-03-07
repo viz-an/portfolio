@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>
+      <div className="absolute bottom-10 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>
         <span className="text-sm font-medium mb-2">Scroll to explore</span>
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center p-1">
           <div className="w-1 h-2 bg-primary rounded-full animate-pulse" />

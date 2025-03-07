@@ -46,9 +46,9 @@ const Navbar: React.FC = () => {
           <a href="#about" className="link-underline text-sm font-medium">
             About
           </a>
-          <a href="#projects" className="link-underline text-sm font-medium">
+          {/* <a href="#projects" className="link-underline text-sm font-medium">
             Projects
-          </a>
+          </a> */}
           <a href="#skills" className="link-underline text-sm font-medium">
             Skills
           </a>
