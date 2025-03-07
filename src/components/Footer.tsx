@@ -28,21 +28,24 @@ const Footer: React.FC = () => {
                   <Github className="w-4 h-4" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://x.com/an_viz08"
+                  target="_blank" rel="noopener noreferrer" 
                   className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-muted-foreground hover:text-primary transition-colors border border-border"
                   aria-label="Twitter"
                 >
                   <Twitter className="w-4 h-4" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/anirudh-viswanath8/"
+                  target="_blank" rel="noopener noreferrer" 
                   className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-muted-foreground hover:text-primary transition-colors border border-border"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-4 h-4" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/an_viz08/"
+                  target="_blank" rel="noopener noreferrer" 
                   className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-muted-foreground hover:text-primary transition-colors border border-border"
                   aria-label="Instagram"
                 >

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight } from "lucide-react";
 
 const Contact: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);

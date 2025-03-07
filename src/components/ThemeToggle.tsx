@@ -5,7 +5,7 @@ import { Moon, Sun, Laptop } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { setTheme } = useTheme();
 
   return (
     <DropdownMenu>
