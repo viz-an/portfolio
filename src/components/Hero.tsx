@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       {/* Background circle */}
       <div 
         ref={circleRef}
-        className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 opacity-70 blur-3xl"
+        className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-blue-200 to-indigo-200 dark:from-blue-900/20 dark:to-indigo-900/20 opacity-70 blur-3xl"
         style={{ top: '20%', right: '10%' }}
       />
 
