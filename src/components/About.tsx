@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import DecorativePattern from "./DecorativePattern";
 
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -35,9 +36,8 @@ const About: React.FC = () => {
             <div>
               <div className="relative">
                 <div className="w-full h-[480px] rounded-lg overflow-hidden animate-on-scroll">
-                  <div className="w-full h-full bg-gradient-to-tr from-slate-900 to-slate-800 flex items-center justify-center text-white">
-                    <span className="text-sm opacity-50">Your image here</span>
-                  </div>
+                  <DecorativePattern />
+
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-lg bg-primary z-10 animate-on-scroll" style={{ transitionDelay: "0.2s" }} />
                 <div className="absolute -top-6 -left-6 w-24 h-24 rounded-lg border border-primary z-10 animate-on-scroll" style={{ transitionDelay: "0.3s" }} />

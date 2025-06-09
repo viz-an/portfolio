@@ -15,40 +15,40 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "A responsive e-commerce solution with React, Redux and TypeScript. Features include real-time inventory updates, personalized recommendations, and WebSocket integration.",
-    category: "React Development",
-    image: "bg-gradient-to-r from-blue-500 to-indigo-600",
-    link: "#",
-    technologies: ["React", "Redux", "TypeScript", "WebSocket", "Styled Components"]
+    title: "Astra UI",
+    description: "Astra UI is a sleek, lightweight, and highly customizable React component library.",
+    category: "React Component Library",
+    image: "https://drive.google.com/thumbnail?id=1MZ-43K8Xbt-9TGx0i0P7X6U77yHTcDxq&sz=w1000",
+    link: "https://astra-ui-blond.vercel.app/",
+    technologies: ["React", "StoryBook", "TypeScript", "TailwindCSS"]
   },
   {
     id: 2,
-    title: "Healthcare Dashboard",
-    description: "Accessible healthcare application built with ARIA standards. Features appointment scheduling, interactive charts for health metrics, and secure patient portal.",
-    category: "UI/UX & Accessibility",
-    image: "bg-gradient-to-r from-emerald-500 to-teal-600",
-    link: "#",
-    technologies: ["React", "TypeScript", "ARIA", "Tailwind CSS", "Chart.js"]
+    title: "Napblog",
+    description: "Napblog is a marketing automation agency and provides internship opportunities.",
+    category: "Marketing & SEO",
+    image: "https://drive.google.com/thumbnail?id=10LVNXyGfYA2VFnlRTBRv0y0ZPGdqLA92&sz=w1000",
+    link: "https://napblog.ie",
+    technologies: ["React", "TypeScript", "ARIA", "Tailwind CSS"]
   },
-  {
-    id: 3,
-    title: "Finance Analytics Platform",
-    description: "Interactive financial dashboard with real-time data visualization, complex filtering capabilities, and performance-optimized rendering of large datasets.",
-    category: "Data Visualization",
-    image: "bg-gradient-to-r from-violet-500 to-purple-600",
-    link: "#",
-    technologies: ["React", "D3.js", "TypeScript", "MongoDB", "Node.js"]
-  },
-  {
-    id: 4,
-    title: "Media Streaming Application",
-    description: "Custom media player with HTML5 Canvas, WebAudio API, and FFMpeg integration for real-time audio visualization and video manipulation.",
-    category: "Media & WebAudio",
-    image: "bg-gradient-to-r from-amber-500 to-orange-600",
-    link: "#",
-    technologies: ["JavaScript", "WebAudio API", "Canvas", "FFMpeg", "HTML5"]
-  },
+  // {
+  //   id: 3,
+  //   title: "Finance Analytics Platform",
+  //   description: "Interactive financial dashboard with real-time data visualization, complex filtering capabilities, and performance-optimized rendering of large datasets.",
+  //   category: "Data Visualization",
+  //   image: "bg-gradient-to-r from-violet-500 to-purple-600",
+  //   link: "#",
+  //   technologies: ["React", "D3.js", "TypeScript", "MongoDB", "Node.js"]
+  // },
+  // {
+  //   id: 4,
+  //   title: "Media Streaming Application",
+  //   description: "Custom media player with HTML5 Canvas, WebAudio API, and FFMpeg integration for real-time audio visualization and video manipulation.",
+  //   category: "Media & WebAudio",
+  //   image: "bg-gradient-to-r from-amber-500 to-orange-600",
+  //   link: "#",
+  //   technologies: ["JavaScript", "WebAudio API", "Canvas", "FFMpeg", "HTML5"]
+  // },
 ];
 
 const Projects: React.FC = () => {
@@ -98,8 +98,9 @@ const Projects: React.FC = () => {
               className="group relative rounded-xl overflow-hidden border border-border hover:border-primary/20 transition-all duration-300 animate-on-scroll"
               style={{ transitionDelay: `${0.1 * (index + 1)}s` }}
             >
-              <div className={`h-64 ${project.image} flex items-center justify-center`}>
-                <span className="text-white text-sm opacity-50">Project image</span>
+              <div className={`h-64 flex items-center justify-center`}>
+                {/* <span className="text-white text-sm opacity-50">Project image</span> */}
+                <img src={project.image} />
               </div>
               
               <div className="p-6 bg-background">

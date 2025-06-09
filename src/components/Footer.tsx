@@ -21,7 +21,8 @@ const Footer: React.FC = () => {
             <div className="flex flex-col items-center md:items-end">
               <div className="flex space-x-4 mb-6">
                 <a 
-                  href="#" 
+                  href="https://github.com/an-viz"
+                  target="_blank" rel="noopener noreferrer" 
                   className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-muted-foreground hover:text-primary transition-colors border border-border"
                   aria-label="Github"
                 >

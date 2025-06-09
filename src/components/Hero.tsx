@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       {/* Background circle */}
       <div 
         ref={circleRef}
-        className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 opacity-70 blur-3xl"
+        className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-blue-200 to-indigo-200 dark:from-blue-900/20 dark:to-indigo-900/20 opacity-70 blur-3xl"
         style={{ top: '20%', right: '10%' }}
       />
 
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>
+      <div className="absolute bottom-10 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>
         <span className="text-sm font-medium mb-2">Scroll to explore</span>
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center p-1">
           <div className="w-1 h-2 bg-primary rounded-full animate-pulse" />
